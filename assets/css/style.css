@@ -29,7 +29,7 @@ body {
     height: 100%;
     grid-column: 1 / span 3;
     position: relative;
-    background-image: url('/background-pattern-desktop.svg');
+    background-image: url('background-pattern-desktop.svg');
 }
 
 /* Main Style */

@@ -1,6 +1,11 @@
 /* Import Work Sans Font Family */
 
 @font-face {
+    font-family: 'Work Sans Bold';
+    src: url(/assets/fonts/static/WorkSans-Bold.ttf) format('truetype');
+}
+
+@font-face {
     font-family: 'Work Sans';
     src: url(/assets/fonts/static/WorkSans-Regular.ttf) format('truetype');
 }
@@ -11,6 +16,7 @@
     --white: hsl(0, 0%, 100%);
     --light-pink: hsl(275, 100%, 97%);
     --grayish-purple: hsl(292, 16%, 49%);
+    --grayish-purple-opacity: hsla(292, 16%, 49%, 0.2);
     --dark-purple: hsl(292, 42%, 14%);
 }
 
@@ -27,6 +33,118 @@ body {
     font-family: 'Work Sans', sans-serif;
     background-color: var(--light-pink);
     color: var(--dark-purple);
+    height: 95vh;
+}
+
+#custom-background {
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / span 3;
+    position: relative;
+    background-image: url('/assets/images/background-pattern-desktop.svg');
+}
+
+/* Main Style */
+
+main {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+}
+
+/* FAQ Styles */
+
+.faq-container {
+    width: 41rem;
+    height: 35rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    grid-row: span 2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+    bottom: 0;
+    margin-inline: auto;
+    overflow:scroll
+}
+
+.faq-title {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-content: center;
+}
+
+.faq-title svg {
+    margin-right: 2rem;
+}
+
+.faq-title h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-family: 'Work Sans Bold', serif;
+}
+
+.hiddenMinus {
+    display: none !important;
+}
+
+#firstMinus.active, #secondMinus.active, #thirdMinus.active, #fourthMinus.active {
+    display: inline-block !important;
+}
+
+/* Question Styles */
+
+.questions div {
+    border-bottom: .1px solid var(--grayish-purple-opacity);
+    padding: 1rem 0;
+}
+
+.questions div svg {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.questions h2 {
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 90%;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+    width: 92%;
+    line-height: 1.5;
+    margin: 2rem 0;
+}
+
+.fourthQuestion {
+    border: none !important;
+}
+
+#minus {
+    display: none;
+}
+
+#minus.active {
+    display: inline-block;
+    fill: var(--dark-purple);
+}
+
+.disappear {
+    display: none !important;
 }
 
 /* Attribution Styles */

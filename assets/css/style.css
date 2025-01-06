@@ -1,15 +1,3 @@
-/* Import Work Sans Font Family */
-
-@font-face {
-    font-family: 'Work Sans Bold';
-    src: url(/assets/fonts/static/WorkSans-Bold.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Work Sans';
-    src: url(/assets/fonts/static/WorkSans-Regular.ttf) format('truetype');
-}
-
 /* Color Variables */
 
 :root {
@@ -90,7 +78,8 @@ main {
 .faq-title h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
-    font-family: 'Work Sans Bold', serif;
+    font-family: 'Work Sans', serif;
+    font-weight: bold;
 }
 
 .hiddenMinus {

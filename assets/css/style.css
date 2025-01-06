@@ -1,0 +1,39 @@
+/* Import Work Sans Font Family */
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url(/assets/fonts/static/WorkSans-Regular.ttf) format('truetype');
+}
+
+/* Color Variables */
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+}
+
+/* Reset All to Default */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Styles */
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--light-pink);
+    color: var(--dark-purple);
+}
+
+/* Attribution Styles */
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
